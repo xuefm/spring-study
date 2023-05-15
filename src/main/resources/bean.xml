@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.expect.spring.entity.User">
+        <property name="name" value="33"></property>
+        <property name="age" value="16"></property>
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+    <bean id="pet" class="com.expect.spring.entity.Pet">
+        <property name="name" value="咪咪"></property>
+        <property name="age" value="2"></property>
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+    <bean id="cat" class="com.expect.spring.entity.Cat" parent="pet">
+        <property name="color" value="白色"></property>
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+    <!-- more bean definitions go here -->
+
+</beans>
